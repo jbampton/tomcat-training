@@ -1,5 +1,5 @@
 These instructions are for Windows
-Modify the paths as approptiate for your OS.
+Modify the paths as appropriate for your OS.
 
 Create a CA
 ===========
@@ -20,7 +20,7 @@ Create an APR/native key and certificate for localhost
 1. Create the private key and the certificate signing request
    openssl req -config openssl.cnf -new -nodes -out demoCA\csr\localhost-req.pem -keyout demoCA\private\localhost-key.pem
 
-2. Sign the certifcate
+2. Sign the certificate
    openssl ca -config openssl.cnf -days 730 -out demoCA\newcerts\localhost-cert.pem -infiles demoCA\csr\localhost-req.pem
 
 3. Create the certificate chain file
